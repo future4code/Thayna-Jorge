@@ -1,0 +1,2 @@
+# Aprendizado da Semana
+Nossa semana de onboarding foi bem interessante para mim. Vimos a importância de respeitar a divercidade e como nos relacionar de forma respeitosa, depois tivemos alguns temas para conhecer a Labenu e então entramos na parte técnica, que por sinal foi bem **divertida e enlouquecedora**. Aprendi a mexer no terminal, solucionei um crime e surtei com os comandos do git, mas fora isso sobrevivi. 
