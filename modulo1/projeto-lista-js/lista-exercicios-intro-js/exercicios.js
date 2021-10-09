@@ -51,47 +51,69 @@ function imprimeInformacoesUsuario() {
   // "Meu nome é NOME, tenho IDADE anos, e o meu email é EMAIL."
   const nome = prompt ("Diga seu nome")
   const idade = prompt ("Diga sua idade")
-  const email = pormpt ("Diga seu email")
-  const mensagem = `Meu nome é ${nome}, tenho ${idade} anos, e o meu email é ${email}`
+  const email = prompt ("Diga seu email")
+  const mensagem = `Meu nome é ${nome}, tenho ${idade} anos, e o meu email é ${email}.`
+  
+  console.log(mensagem)
+  
 }
 
-console.log(mensagem)
+
 
 
 // EXERCÍCIO 05
 function imprimeTresCoresFavoritas() {
   // implemente sua lógica aqui
+  const cor1 = prompt("Diga a primeira cor favorita")
+  const cor2 = prompt("Diga a segunda cor favorita")
+  const cor3 = prompt("Diga a terceira cor favorita")
+  const lista = [cor1, cor2, cor3]
+  console.log(lista)
 
 }
 
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
   // implemente sua lógica aqui
+  const string = ("bAnAnA")
+  const result = string.toUpperCase()
+  
+  return(result)
 
 }
 
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
   // implemente sua lógica aqui
+  const venda = (custo/valorIngresso)
 
+  return (venda)
 }
 
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
   // implemente sua lógica aqui
+  const tamanho = string1.length === string2.length
 
+  return (tamanho)
 }
 
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
   // implemente sua lógica aqui
+  const lista = [1, 2, 3]
+  const item = lista[0]
 
+  return item
 }
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
   // implemente sua lógica aqui
+  const lista = [1, 2, 3, 4, 5]
+  const item = lista[4]
 
+  return item
 }
 
 // EXERCÍCIO 11
