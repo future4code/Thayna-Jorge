@@ -75,7 +75,6 @@ function imprimeTresCoresFavoritas() {
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
   // implemente sua lógica aqui
-  const string = ("bAnAnA")
   const result = string.toUpperCase()
   
   return(result)
@@ -101,8 +100,7 @@ function checaStringsMesmoTamanho(string1, string2) {
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
   // implemente sua lógica aqui
-  const lista = [1, 2, 3]
-  const item = lista[0]
+  const item = array[0]
 
   return item
 }
@@ -110,8 +108,7 @@ function retornaPrimeiroElemento(array) {
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
   // implemente sua lógica aqui
-  const lista = [1, 2, 3, 4, 5]
-  const item = lista[4]
+  const item = array[array.length -1]
 
   return item
 }
@@ -119,6 +116,9 @@ function retornaUltimoElemento(array) {
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
+  const primeiroItem = array[0]
+  const ultimoItem = array[
+
 
 }
 
