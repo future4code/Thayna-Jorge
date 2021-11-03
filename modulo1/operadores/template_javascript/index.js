@@ -56,8 +56,8 @@ console.log(Number(primeiroN) > Number(segundoN))
 console.log(Number(primeiroN) === Number(segundoN))
 
 //O primeiro numero é divisível pelo segundo? true
-//const sobre = (Number(primeiroN) %  Number(segundoN))
+const sobre = (Number(primeiroN) %  Number(segundoN))
 //console.log(sobra === 0)
 //O segundo numero é divisível pelo primeiro? true
-//const sobra = (Number(segundoN) %  Number(primeiroN))
+const sobra = (Number(segundoN) %  Number(primeiroN))
 //console.log(sobra === 0)
