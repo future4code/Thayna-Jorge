@@ -1,0 +1,67 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+body{
+    background-color:white;
+}
+.divBusca{
+    background-color: gray ;
+    border: solid 1px;
+    border-radius: 15px;
+    width: 300px;
+    padding-top: 3px;
+    
+
+}
+
+#txtBusca {
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 18px;
+    border:none;
+    height: 24px;
+    width: 250px;
+    padding-left: 10px;
+}
+
+#btnBusca {
+    width: 20px;
+    right: 20px;
+    padding-left: 10px;
+    padding-top: 2px;
+
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    justify-content: center;
+    margin-left: 80px;
+    
+    
+}
+video{
+    width: 400px;
+    height: 400px;
+    padding-bottom: 20px;
+}
+
+
+
+
