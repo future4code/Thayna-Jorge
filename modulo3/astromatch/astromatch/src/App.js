@@ -1,38 +1,42 @@
-import {useState, useEffect} from 'react'
-import axios from 'axios';
-import styled from 'styled-components'
-// import TelaDeMatch from './components/TelaDeMatch'
-// import TelaInicial from './components/TelaInicial'
+import React, { useState } from "react"
+import { TelaDeMatch } from "./components/TeladeMatch/TelaDeMatch"
+import { TelaInicial } from "./components/TelaInicial/TelaInicial"
+import Fogo from './img/fire.png'
+import Logo from './img/transferir.png'
+import {Header, IconeFogo , StyledTI   } from './styled';
 
 const App = () => {
-  const [pagina, setPagina] = useState ('HOME')
+  const [paginaAtual, setPaginaAtual] = useState ("Tela Inicial")
 
-  const trocaPagina = (pagina) => {
-    setPagina(pagina)
+  const trocaTela = () =>{
+    
+    if (paginaAtual === "Tela Inicial") {
+        setPaginaAtual("Tela de Match")
+    }else {
+      setPaginaAtual ("Tela Inicial")
+    }
   }
-  
-  // const escolhaPagina = () => {
-  //   switch (pagina){
-  //     case "HOME":
-  //       return <TelaInicial trocaPagina={trocaPagina}/>
-  //     case "MATCH":
-  //       return <TelaDeMatch trocaPagina={trocaPagina}/>
-  //     default:
-  //       return <TelaInicial trocaPagina={trocaPagina}/>  
-  //   }
-  // }
 
- 
+  const limpaMatch = () => {
+    console.log("Vou limpar Geral !")
+  }
 
 
   return (
-    <div>
-     
-      <h1>ASTROMATCH</h1>
-      <button>Descartar</button>
-      <button>Dar Match</button>
-    </div>
-  );
+    <StyledTI>
+       <Header>
+          <IconeFogo>
+          <img src={Logo} />
+          <img src={Fogo} onClick={trocaTela}/>
+        </IconeFogo>
+      </Header>
+
+
+      {paginaAtual === "Tela Inicial" ? <TelaInicial/> : <TelaDeMatch />}
+      
+      <button onClick={limpaMatch}>Limpar seus Matches</button>
+    </StyledTI>
+  )
 }
 
-export default App;
+export default App
