@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Header = styled.div`
-    
+    border: 2px solid black;
     width: 30%;
     height: 70%;
     display:flex;
@@ -10,6 +10,7 @@ export const Header = styled.div`
     flex-direction: column;
 
     img {
+        border: 1px solid gray;
         height: 100px;
         width: 200px;
     }
@@ -17,6 +18,7 @@ export const Header = styled.div`
 `
  
 export const IconeFogo = styled.div`
+        border: 1px solid yellow;
         width: 50%;
         height: 20%;
         display: flex;

@@ -1,10 +1,14 @@
 import react from "react";
-import { StyledTI, Candidato, PerfilCandit, Header, Button } from "./styled";
+import { ContainerMatchs } from "./styled";
 
-export const TelaDeMatch = (props) => {
+export const TelaDeMatch = () => {
+
+
   return (
-    <div>
+    <ContainerMatchs>
+      
       <h2>Tela de Match</h2>
-    </div>
+    </ContainerMatchs>
   )
+
 }
