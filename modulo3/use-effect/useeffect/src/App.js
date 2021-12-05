@@ -41,7 +41,11 @@ const App = () => {
         <select onChange={changePokeName}>
           <option value={""}>Nenhum</option>
           {/* renderizando a lista de pokemons como opções do select */}
+
           {pokeList.map(pokon => {
+
+          {pokeList.map(pokemon => {
+
             return (
               <option key={pokemon.name} value={pokemon.name}>
                 {pokemon.name}
