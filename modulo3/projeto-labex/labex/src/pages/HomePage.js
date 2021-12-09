@@ -6,7 +6,7 @@ export const HomePage = () =>{
     const history = useHistory()
 
     const goToVerViagens = () => {
-        history.push("/trips/list")
+        history.push("/listaviagens")
     }
     
     const irParaAreaAdmin = () => {

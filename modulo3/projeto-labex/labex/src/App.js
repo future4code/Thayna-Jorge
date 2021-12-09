@@ -20,11 +20,11 @@ const App = () => {
             <HomePage />
           </Route>  
 
-          <Route exact path = {"/trips/list"}>
+          <Route exact path = {"/listaviagens"}>
             <ListTripPage />
           </Route>
 
-          <Route exact path = {"/trips/application"}>
+          <Route exact path = {"/formularioinscricao"}>
             <ApplicationFormPage />
           </Route>
 
@@ -32,15 +32,15 @@ const App = () => {
             <LoginPage />
           </Route>
 
-          <Route exact path = {"/admin/trips/list"}>
+          <Route exact path = {"/paineladmin"}>
             <AdminHomePage />
           </Route>
 
-          <Route exact path = {"/admin/trip/:id"}>
+          <Route exact path = {"/detalhesviagem"}>
             <TripDetailsPage />
           </Route>
 
-          <Route exact path = {"/admin/trips/create"}>
+          <Route exact path = {"/criarviagem"}>
             <CreateTripPage />
           </Route>
 

@@ -10,7 +10,7 @@ export const ListTripPage = () => {
     }
 
     const irParaInscreverse = () => {
-        history.push("/trips/application")
+        history.push("/formularioinscricao")
     }
 
     return (
