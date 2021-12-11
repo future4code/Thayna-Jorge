@@ -6,6 +6,8 @@ export const LoginPage = () => {
     const [email, setEmail] = useState ("")
     const [senha, setSenha] = useState ("")
 
+    const token = localStorage.getItem("token")
+
     const onChangeEmail = (event) => {
         setEmail(event.target.value)
     }
@@ -23,7 +25,9 @@ export const LoginPage = () => {
 
         axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labeX/thayna-saad/login", body)
             .then((resposta) => {
-                console.log("Deu certo", resposta.data)
+                console.log("Deu certo", resposta.data.token)
+                localStorage.setItem("token", resposta.data.token)
+                history.push("/paineladmin")
             })
             .catch((erro) => {
                 console.log("Deu errado", erro.response)
@@ -35,7 +39,9 @@ export const LoginPage = () => {
     const history = useHistory()
 
     const voltarParaHome = () => {
-        history.goBack("/")
+        if (token){
+        history.push("/paineladmin")
+        }
     }    
 
     return (

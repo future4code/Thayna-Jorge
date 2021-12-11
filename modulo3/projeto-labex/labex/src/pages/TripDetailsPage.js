@@ -1,19 +1,24 @@
 import React, { useEffect } from "react"
 import { useHistory } from "react-router"
 import axios from "axios"
-
+import {useProtectPage} from "./Hooks/useProtectPage"
 
 export const TripDetailsPage = () => {
-    const history = useHistory()
 
+
+    const history = useHistory()
+    
     const voltaPainelAdmin = () => {
-        history.goBack("paineladmin")
+        history.goBack("/paineladmin")
     }
    
+    useProtectPage()
+
     useEffect (() => {
+        const token = localStorage.getItem("token")
         axios.get("https://us-central1-labenu-apis.cloudfunctions.net/labeX/thayna-saad/trip/WyZ9w6ag4sodlPEehcPz", {
             headers : {
-                auth: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IklWb…jU3fQ.W7zlOUrcYGIZVwvC5LtgUXkLdDXxLvQwKLByPr9OZZA"
+                auth: token
             }
         })
           .then((response) => {
