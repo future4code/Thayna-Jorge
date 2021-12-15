@@ -6,10 +6,12 @@ import TelaDetalhesReceitas from "../Paginas/Tela_Detalhes_Receita/TelaDetalhesR
 import TelaInscreverse from "../Paginas/Tela_Increver-se/TelaInscreverse"
 import TelaReceitas from "../Paginas/Tela_Receitas/TelaReceitas"
 import Erro from "../Paginas/Erro/Erro"
+import Header from "../components/Header/Header"
 
 const Router = () => {
     return(
         <BrowserRouter>
+            <Header/>
             <Switch>
                 
                 <Route exact path="/login">

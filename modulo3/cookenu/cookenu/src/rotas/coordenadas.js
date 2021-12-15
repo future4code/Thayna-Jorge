@@ -1,19 +1,19 @@
-export const goToLogin = (histry) => {
-    histry.push("/login")
+export const goToLogin = (history) => {
+    history.push("/login")
 }
 
-export const goToCadastro = (histry) => {
-    histry.push("/cadastro")
+export const goToCadastro = (history) => {
+    history.push("/cadastro")
 }
 
-export const goToAdcReceitas = (histry) => {
-    histry.push("/adicionar-receitas")
+export const goToAdcReceitas = (history) => {
+    history.push("/adicionar-receitas")
 }
 
-export const goToDetalhes= (histry ,id) => {
-    histry.push(`/detalhes/${id}`)
+export const goToDetalhes= (history ,id) => {
+    history.push(`/detalhes/${id}`)
 }
 
-export const goToReceitas = (histry) => {
-    histry.push("/")
+export const goToReceitas = (history) => {
+    history.push("/")
 }
