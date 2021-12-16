@@ -1,25 +1,22 @@
 import Reac from "react"
-import {BrowserRouter, Switch, Route} from "react-router-dom"
+import {Switch, Route} from "react-router-dom"
 import TelaLogin from "../Paginas/Login/TelaLogin"
 import TelaAdcReceitas from "../Paginas/Tela_Adc_Receitas/TelaAdcReceitas"
 import TelaDetalhesReceitas from "../Paginas/Tela_Detalhes_Receita/TelaDetalhesReceitas"
 import TelaInscreverse from "../Paginas/Tela_Increver-se/TelaInscreverse"
 import TelaReceitas from "../Paginas/Tela_Receitas/TelaReceitas"
 import Erro from "../Paginas/Erro/Erro"
-import Header from "../components/Header/Header"
 
-const Router = () => {
+const Router = ({setTrocaButton}) => {
     return(
-        <BrowserRouter>
-            <Header/>
             <Switch>
                 
                 <Route exact path="/login">
-                    <TelaLogin/>
+                    <TelaLogin setTrocaButton={setTrocaButton}/>
                 </Route>
 
                 <Route exact path="/cadastro">
-                    <TelaInscreverse/>
+                    <TelaInscreverse setTrocaButton={setTrocaButton}/>
                 </Route>
 
                 <Route exact path="/">
@@ -39,7 +36,6 @@ const Router = () => {
                 </Route>
 
             </Switch>
-        </BrowserRouter>
     )
 }
 export default Router

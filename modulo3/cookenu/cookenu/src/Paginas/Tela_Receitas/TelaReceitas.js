@@ -1,13 +1,12 @@
 import React from "react"
-import { Button } from "@material-ui/core"
+import useProtectPage from "../../Hooks/useProtectPage"
 
 const TelaReceitas = () => {
+    useProtectPage()
     return (
         <div>
             <h1>Lista de Receitas</h1>
-            <Button variant="contained" color="primary">
-                Clique
-            </Button>
+       
         </div>
     )
 }

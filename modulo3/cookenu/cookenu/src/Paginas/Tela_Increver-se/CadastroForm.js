@@ -1,29 +1,34 @@
 import React from "react"
-import {InputsContainer} from "./StyledLogin"
+import {InputsContainer} from "./StyledInscreverse"
 import useForm from "../../Hooks/useForm"
 import { Button, TextField } from "@material-ui/core"
-import { login } from "../../services/usuario"
 import { useHistory } from "react-router-dom"
+import { cadastro } from "../../services/usuario"
 
-
-
-
-const LoginForm = ({setTrocaButton}) => {
-    const [form, onChange, clear] = useForm({ email: "", password: "" })
-    const history = useHistory()
-
+const CadastroForm = ({setTrocaButton}) => {
+    const history= useHistory()
+    const [form, onChange, clear] = useForm({ name: "", email: "", password: "" })
 
     const onSubmitForm = (event) => {
         event.preventDefault()
-        login(form, clear, history, setTrocaButton)
+        cadastro(form, clear, history, setTrocaButton)
     }
-
-    
 
     return (
             <InputsContainer>
                 <form onSubmit={onSubmitForm}>
-                    
+                    <TextField
+                        name={"name"}
+                        value={form.name}
+                        onChange={onChange}
+                        label={"Nome"}
+                        variant={"outlined"}
+                        fullWidth
+                        margin={"normal"}
+                        required
+                        autoFocus
+                    />
+
                     <TextField
                         name={"email"}
                         value={form.email}
@@ -47,7 +52,7 @@ const LoginForm = ({setTrocaButton}) => {
                         required
                         type={"password"}
                     />
-            
+
                     <Button
                         type={"submit"}
                         fullWidth
@@ -55,11 +60,11 @@ const LoginForm = ({setTrocaButton}) => {
                         color={"primary"}
                         margin={"noraml"}
                     >
-                        Fazer Login
+                        Fazer Cadastro
                     </Button>
 
                 </form>
             </InputsContainer>
     )
 }
-export default LoginForm
+export default CadastroForm

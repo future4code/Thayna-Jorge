@@ -6,13 +6,30 @@ import { goToLogin, goToReceitas } from '../../rotas/coordenadas'
 import { useHistory } from 'react-router-dom'
 
 
-const Header = () => {
+const Header = ({trocaButton, setTrocaButton}) => {
+    const token = localStorage.getItem("token")
     const history = useHistory()
+
+
+    const logout = () => {
+      localStorage.removeItem("token")
+    }
+
+    const actionButton = () => {
+      if (token) {
+        logout()
+        setTrocaButton("Login")
+        goToLogin(history)
+      } else {
+        goToLogin(history)
+      }
+    }
+
   return (
      <AppBar position="static">
         <StyledToolbar>
           <Button onClick={() => goToReceitas(history)} color="inherit"> CookeNu </Button>
-          <Button onClick={() => goToLogin(history)}color="inherit">Login</Button>
+          <Button onClick={actionButton} color="inherit">{trocaButton}</Button>
         </StyledToolbar>
       </AppBar>
   )
