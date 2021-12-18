@@ -1,6 +1,6 @@
 import { useHistory } from "react-router-dom";
 import { useLayoutEffect } from "react";
-import {goToReceitas } from "../rotas/coordenadas";
+import { goToReceitas } from "../rotas/coordenadas";
 
 const useUnprotectedPage = () => {
     const history= useHistory()
