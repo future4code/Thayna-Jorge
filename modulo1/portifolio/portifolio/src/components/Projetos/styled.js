@@ -7,9 +7,9 @@ export const ContainerProjetos = styled.div`
     flex-direction: column;
     padding-top: 50px;
     font-family:Arial;
-    @media (max-width: 800px) {
+    /* @media (max-width: 800px) {
     width: 1168px;
-    }
+    } */
 
     img{
         width: 1050px ;

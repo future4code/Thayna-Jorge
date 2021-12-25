@@ -11,10 +11,8 @@ export const ContatoContainer = styled.div `
     background-image:url("https://numarketing.co.uk/wp-content/uploads/2014/06/Website-Design-Background.png");
     background-size:cover ;
     color: white;
-    @media (max-width: 800px) {
-    width: 1168px;
-    }
-
+    
+    
     h1{
       font-size: 80px;
       font-family:Arial;

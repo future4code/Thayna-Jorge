@@ -14,9 +14,9 @@ export const FotoPerfil = styled.div `
         font-family:Arial;
         font-weight:lighter;
 
-        @media (max-width: 1000px) {
+        /* @media (max-width: 1000px) {
     width: 1168px;
-  }
+  } */
         
         
 

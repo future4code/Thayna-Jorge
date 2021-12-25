@@ -9,8 +9,8 @@ export const FundoBackground = styled.div`
    flex-direction:column;
    padding: 5px;
    
-   @media (max-width: 1000px) {
-    width: 1168px;
+   /* @media (max-width: 1000px) {
+    width: 1168px; */
   
 `
 

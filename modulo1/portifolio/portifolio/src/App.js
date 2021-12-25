@@ -9,6 +9,11 @@ import {Projetos} from "./components/Projetos/Projetos"
 
 export const BodyContainer = styled.div `
   background-color: #ffffff;
+
+  @media (max-width: 1000px) {
+    width: 1168px;
+    }
+
 `
 
 const App =() => {
