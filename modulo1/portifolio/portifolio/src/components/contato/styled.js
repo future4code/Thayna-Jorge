@@ -8,7 +8,7 @@ export const ContatoContainer = styled.div `
     height: 600px;
     /* width: 1050px; */
     border: 1px solid black ;
-    background-image:url("https://mihost.org/mh16/wp-content/uploads/2016/11/bg_web_design.jpg");
+    background-image:url("https://numarketing.co.uk/wp-content/uploads/2014/06/Website-Design-Background.png");
     background-size:cover ;
     color: white;
     @media (max-width: 800px) {
@@ -16,13 +16,14 @@ export const ContatoContainer = styled.div `
     }
 
     h1{
-      font-size: 50px;
+      font-size: 80px;
       font-family:Arial;
     }
 
     h2{
-      font-size: 30px;
+      font-size: 50px;
       font-family:Arial;
+      
     }
     
   }

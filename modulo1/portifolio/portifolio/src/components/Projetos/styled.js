@@ -6,6 +6,10 @@ export const ContainerProjetos = styled.div`
     align-items: center;
     flex-direction: column;
     padding-top: 50px;
+    font-family:Arial;
+    @media (max-width: 800px) {
+    width: 1168px;
+    }
 
     img{
         width: 1050px ;
@@ -18,7 +22,7 @@ export const ContainerProjetos = styled.div`
         width: 250px;
         height: 50px;
         font-size:30px;
-        font-family: Roboto;
+        font-family:Arial;       
         border-radius:30px;
         background-color: #421293 ;
         color: #ffff;

@@ -7,7 +7,7 @@ export const FundoBackground = styled.div`
    align-items: center;
    justify-content:center;
    flex-direction:column;
-   padding: 10px;
+   padding: 5px;
    
    @media (max-width: 1000px) {
     width: 1168px;
@@ -17,13 +17,13 @@ export const FundoBackground = styled.div`
 export const TextoInfo = styled.text `
    text-align: center;
    padding: 250px;
-   font-family: inherit;
+   font-family:Arial;
    font-weight:lighter;
   
    
 
 button{
-   width: 25%;
+   width: 250px;
    height: 40px;
    font-size:30px;
    font-family: Monospace;

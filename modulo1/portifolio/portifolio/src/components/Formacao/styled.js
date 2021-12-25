@@ -23,8 +23,7 @@ export const TextFormacao = styled.div `
     box-shadow: 5px 5px 5px black;
     text-align:center;
     color:#efe8f1 ;
-    font-family: verdana;
-    font-size:small;
+    font-family:Arial;    
     width: 980px;
 
     img{
