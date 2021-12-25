@@ -1,10 +1,15 @@
 import styled from "styled-components";
 
 export const ContainerFormacao = styled.div `
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
+    
+ @media (max-width: 800px) {
+    width: 1168px;
+  }
     
 `
 
@@ -24,9 +29,10 @@ export const TextFormacao = styled.div `
 
     img{
         
-        width: 100px;
+        width: 120px;
         height: 100px;
 
     }
     
 `
+

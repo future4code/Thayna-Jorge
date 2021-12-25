@@ -1,7 +1,7 @@
 import React from "react";
 import { ContainerFormacao, TextFormacao } from "./styled";
-import iconGradu from "../img/graduacao.png"
-import iconExpe from "../img/experi.png"
+import iconGradu from "../img/capelo.png"
+import iconExpe from "../img/maleta.png"
 export const Formacao = () => {
     return (
         <ContainerFormacao>

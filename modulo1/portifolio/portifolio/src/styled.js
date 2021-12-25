@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyled = createGlobalStyle `
     body{
@@ -9,4 +9,6 @@ export const GlobalStyled = createGlobalStyle `
     *{
         box-sizing: border-box;
     }
+
 `
+

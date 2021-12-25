@@ -8,13 +8,15 @@ export const FundoBackground = styled.div`
    justify-content:center;
    flex-direction:column;
    padding: 10px;
+   
+   @media (max-width: 1000px) {
+    width: 1168px;
   
 `
 
 export const TextoInfo = styled.text `
    text-align: center;
    padding: 250px;
-   
    font-family: inherit;
    font-weight:lighter;
   
@@ -31,7 +33,11 @@ button{
    &:hover {
       background-color: #ff91fc;
    }
+
 }
+
+
+
 `
 
 

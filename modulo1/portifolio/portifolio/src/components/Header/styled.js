@@ -13,7 +13,10 @@ export const FotoPerfil = styled.div `
         color:#efe8f1 ;
         font-family: inherit;
         font-weight:lighter;
-    
+
+        @media (max-width: 1000px) {
+    width: 1168px;
+  }
         
         
 
@@ -30,6 +33,8 @@ export const FotoPerfil = styled.div `
          to {
             transform: translateX(0);
         }
+
+        
     } 
 
 
@@ -46,5 +51,9 @@ export const FotoPerfil = styled.div `
             transform: translateX(0);
         }
     }
+
+    div {
+    word-wrap:break-word;
+ }
 
 `
