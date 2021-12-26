@@ -17,7 +17,7 @@ export const FundoBackground = styled.div`
 `
 
 export const TextoInfo = styled.p`
-   text-align: justify;
+   text-align: center;
    /* padding: 250px; */
    font-family:Arial;
    font-weight:lighter;
