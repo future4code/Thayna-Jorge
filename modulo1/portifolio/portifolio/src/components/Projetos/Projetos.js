@@ -8,11 +8,11 @@ export const Projetos = () =>{
     return (
         <ContainerProjetos>
             <hr/>
-            <h1>Porjeto Cookenu</h1>
+            <h1>Projeto Cookenu</h1>
 
-            <h2>
+            <p>
                 Tecnologias utilizadas : HTML, CSS, JavaScript, Integração com API e React. <br/>
-            </h2>
+            </p>
             <a href="https://sore-earthquake.surge.sh/" target="_blank"><button>Ir para Cookenu</button></a>
             <a href="https://github.com/Thaysaadj/cookenu/" target="_blank"><button>Ver Código</button></a>
 

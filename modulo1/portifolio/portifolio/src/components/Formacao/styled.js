@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const ContainerFormacao = styled.div `
-    
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
     
- /* @media (max-width: 800px) {
+ /* @media (min-width: 800px) {
     width: 1168px;
   } */
     
@@ -15,21 +15,26 @@ export const ContainerFormacao = styled.div `
 
 export const TextFormacao = styled.div `
     
-    border: 2px solid black;
     padding: 25px;
     margin: 5px;
-    background-color: #c71293;
+    background-color: #083053
+;
     border-radius: 10px ;
-    box-shadow: 5px 5px 5px black;
     text-align:center;
     color:#efe8f1 ;
     font-family:Arial;    
-    width: 980px;
+    width: 80%;
 
     img{
         
-        width: 120px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
+
+    }
+
+    @media (min-width: 1000px) {
+        width: 60%;
+        font-size: 25px;
 
     }
     

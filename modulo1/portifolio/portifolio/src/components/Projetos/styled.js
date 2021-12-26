@@ -7,32 +7,50 @@ export const ContainerProjetos = styled.div`
     flex-direction: column;
     padding-top: 50px;
     font-family:Arial;
-    /* @media (max-width: 800px) {
-    width: 1168px;
-    } */
+
+    @media (min-width: 1000px) {
+    width: 100%;
+    }
 
     img{
-        width: 1050px ;
-        height: 500px;
+        width: 100% ;
+        height: auto;
         border-radius: 10px;
         margin: 25px;
+
+        @media (min-width: 1000px) {
+            width: 900px;
+            height: auto;
+
+        }
     }
     
     button{
-        width: 250px;
+        width: 200px;
         height: 50px;
         font-size:30px;
         font-family:Arial;       
-        border-radius:30px;
-        background-color: #421293 ;
+        border-radius:5px;
+        background-color: #5b8cab ;
         color: #ffff;
         margin: 10px;
-        font-size:25px;
+        font-size:20px;
             &:hover {
-             background-color: #ff5500;
+             background-color: #2e618a;
             }
 
-   }
+    }
+
+    p{
+        text-align: center;
+        font-size: 20px;
+
+        @media (min-width: 1000px) {
+            font-size:25px;
+
+        }
+    }
    
+    
 
 `

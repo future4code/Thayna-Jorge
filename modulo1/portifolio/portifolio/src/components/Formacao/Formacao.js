@@ -7,53 +7,53 @@ export const Formacao = () => {
         <ContainerFormacao>
             <TextFormacao>
                 <img src={iconGradu}/>
-                <h1>
+                <h2>
                     Formação
-                </h1>
-                <h2>
+                </h2>
+                <p>
                     Labenu - Full-Stack (Cursando)
-                </h2>
-                <h2>
+                </p>
+                <p>
                 Tecnologias Aprendidas
-                </h2>
-                <h2>
+                </p>
+                <p>
                      JavaScript | CSS3 | HTML5 | React.js | Git | GitHub | Node.js 
 
-                </h2>
+                </p>
                 <hr/>
-                <h2> Escola Técnica Rezende-Rammel</h2>
-                <h2> Técnico em Petróleo e Gás - (Concluído)</h2>
+                <p> Escola Técnica Rezende-Rammel</p>
+                <p> Técnico em Petróleo e Gás - (Concluído)</p>
 
             </TextFormacao>
 
             <TextFormacao>
                 <img src={iconExpe}/>
-                <h1>
+                <h2>
                     Experiência Profissional
-                </h1>
-                <h2>
+                </h2>
+                <p>
                     VolksWagen - Auxiliar Administrativo
-                </h2>
-                <h2>
+                </p>
+                <p>
                     Atividades
-                </h2>
-                <h2>
+                </p>
+                <p>
                         Atendimento ao Público | Organização de Arquivos<br/>
                         Controle e fechamento de Ordem de Serviço<br/>
                         Processos Burocráticos | Faturamento
-                </h2>
+                </p>
                 <hr/>
 
-                <h2>
+                <p>
                     4D ODONTOLOGIA - Recepcionista
-                </h2>
-                <h2>
+                </p>
+                <p>
                     Atividades
-                </h2>
-                <h2>
+                </p>
+                <p>
                     Atendimento ao Público | Criação e Controle de Prontuário<br/>
                     Marcação de Consultas | Cadastro em Sistema interno
-                </h2>
+                </p>
             </TextFormacao>
         </ContainerFormacao>
     )
