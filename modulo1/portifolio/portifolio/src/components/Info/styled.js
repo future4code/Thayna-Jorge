@@ -17,10 +17,11 @@ export const FundoBackground = styled.div`
 `
 
 export const TextoInfo = styled.p`
-   text-align: center;
+   text-align: justify;
    /* padding: 250px; */
    font-family:Arial;
    font-weight:lighter;
+
   
    
 

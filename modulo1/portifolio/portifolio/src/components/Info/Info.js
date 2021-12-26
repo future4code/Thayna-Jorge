@@ -13,7 +13,7 @@ export const Info = () => {
                 Olá muito prazer, tenho 25 anos, moro no Rio de Janeiro - RJ <br/>
                 Atuo na área de Web e tecnologia há mais ou menos 6 anos<br/>
                 Comecei com pequenos projetos de Web Marketing como posts para redes sociais,<br/>
-                cartão de visita interetivo e sites em  Wix e WordPress.<br/>
+                cartão de visita interativo e sites em  Wix e WordPress.<br/>
                 Surgiu então a oportunidade de fazer o curso de Full-Stack pela Labenu, <br/>
                 com o qual aprendi a desenvolver projetos em HTML, CSS, JavaScript e React. 
                 </p>
