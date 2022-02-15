@@ -1,0 +1,18 @@
+GET http://localhost:3003/caracter?name=Deadpool
+
+###
+
+PUT http://localhost:3003/caracter/cria
+
+//Aqui é onde está meu http, por esse cara ai, eu faço minha
+// plicação funcionar
+
+{
+    "nome": "A fuga das galinhas",
+    "genero":"FEMEA",
+    "descricao":"Galinhas que fogem do abatedouro"
+}
+
+###
+
+DELETE http://localhost:3003/caracter/3
