@@ -1,0 +1,58 @@
+UUID 
+A autenticação é identificar o usuário da aplicação. Apenas
+as informações. Não sabemos se aquelas informações são 
+verdadeiras
+
+Um id gerado pelo UUID é composto por  8-4-4-4-12
+ou seja, são 36 caracteres. eles são hexadecimais e de a a f
+
+Existem 5 versões de UUID
+Vamos usar a V4
+v4 - Gerados a partir de numeros aleatórios e peseudo- aleatórios
+
+Garante que a probabilidade de ter um id igual ao outro, é quase nulo 
+
+Instalação do UUID 
+npm i uuid @types/uuid
+
+obs: se o types cair em dependencias, joga ele por dev-dependenses
+
+a importação 
+import {v4} from uuid
+ 
+export function IdGenerator (): string {
+	return v4()
+}
+
+
+JWT - JsonWebToken
+Temos uma form apadronizada de identificar os usuários, precisamos
+pensar em como controlar o acesso aos endpoint 
+Podemos exigir uma credencial do usuário nos cabeçalhos mas isso gera uma 
+experiência ruim para o usuário e fic apouco seguro pq temos 
+que trafegar mts vezes dados senssíveis 
+O melhor é cirar um token de autenticação e ele cumpre
+bem melhor esse propósito. 
+
+instalação 
+npm i jsonwebtoken @types/jsonwebtoken
+import 
+
+import * as jwt from "jsonwebtoken"
+cosnt token = jwt.sign(
+
+	{id:"abcdef"}, // o front vai me enviar um usuário e é aqui q o usuário vai ser identificado
+	"bananinha",  // chave de acesso
+	{ expirensIn: "24h"} // a data de validade da sua aplicação
+)
+
+const tokenData = jwt.verify (
+	token, // para pegar o usuário, passamos o token
+	"bananinha" // passamos a chave de acesso desse usuário 
+)
+
+para gerar token usamos a função sign
+
+
+
+
