@@ -21,7 +21,7 @@ export const createUser = async (req: Request, res:Response) => {
             res.status(409).send("Usuário já tem cadastro")
         }
 
-        const qtdCaracter = senha.length()
+        const qtdCaracter = senha.length
         if (qtdCaracter <= 6){
             res.status(406).send("Caracteres da senha ultrapassam 6")
         }
@@ -42,7 +42,7 @@ export const createUser = async (req: Request, res:Response) => {
 
         res.status(200).send({message:"Usuário criado com sucesso ", token})
 
-    } catch (error) {
-        res.status(400).send("Ocorreu um erro")
+    } catch (error:any) {
+        res.status(400).send({message: error.message || error.sqlMessage})
     }
 }
