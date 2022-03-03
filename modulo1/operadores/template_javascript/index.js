@@ -46,18 +46,19 @@
 // Exercício 4
 //Faça um programa que pergunte ao usuario dois numeros
 // faça as operações 
-const primeiroN = prompt ("Digite o primeiro número")
-const segundoN = prompt ("Digite o segundo número")
-// imprima no console true ou false
-//O primeiro numero é maior que segundo? true
-console.log(Number(primeiroN) > Number(segundoN))
+// const primeiroN = prompt ("Digite o primeiro número")
+// const segundoN = prompt ("Digite o segundo número")
+// // imprima no console true ou false
+// //O primeiro numero é maior que segundo? true
+// console.log(Number(primeiroN) > Number(segundoN))
 
-//O primeiro numero é igual ao segundo? false
-console.log(Number(primeiroN) === Number(segundoN))
+// //O primeiro numero é igual ao segundo? false
+// console.log(Number(primeiroN) === Number(segundoN))
 
-//O primeiro numero é divisível pelo segundo? true
-const sobre = (Number(primeiroN) %  Number(segundoN))
-//console.log(sobra === 0)
-//O segundo numero é divisível pelo primeiro? true
-const sobra = (Number(segundoN) %  Number(primeiroN))
-//console.log(sobra === 0)
+// //O primeiro numero é divisível pelo segundo? true
+// const sobre = (Number(primeiroN) %  Number(segundoN))
+// //console.log(sobra === 0)
+// //O segundo numero é divisível pelo primeiro? true
+// const sobra = (Number(segundoN) %  Number(primeiroN))
+// //console.log(sobra === 0)
+
