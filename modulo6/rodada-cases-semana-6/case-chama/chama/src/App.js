@@ -1,13 +1,12 @@
-import { Busca } from "./FormBusca/Busca";
-import { Historico } from "./TelaHistorico/Historico";
-import { Usuario } from "./TelaUsuario/Usuario";
+import React from "react";
+import { HomePage } from "./HomePage";
+
+
 
 function App() {
   return (
     <div>
-      <Busca/>
-      {/* <Usuario/> */}
-      {/* <Historico/> */}
+      <HomePage/>
     </div>
   )
 }

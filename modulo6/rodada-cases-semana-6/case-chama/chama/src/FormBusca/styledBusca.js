@@ -4,12 +4,13 @@ import fundobusca from "../img/degrade.jpg"
 export const ContainerPai = styled.div `
     background-color: #c5daff;
     width:100% ;
-    height:100vh;
+    /* height:100vh; */
     border: 1px solid black;
     display:flex ;
     justify-content:center ;
     margin:auto ;
 `
+
 
 export const ContainerBusca = styled.div `
     background-image: url(${fundobusca}) ;
@@ -21,7 +22,9 @@ export const ContainerBusca = styled.div `
     display: flex ;
     justify-content:center;
     align-items:center ;
-
+    flex-direction:column ;
+    
+    
     
     input{
         width:600px ;
@@ -31,11 +34,24 @@ export const ContainerBusca = styled.div `
         font-size: 2em ;
         padding-left: 25px ;
     }
-
+    
     ion-icon{
         width:80px ;
-        height:800px ;
+        height:80px ;
         color: rgba(255, 255, 255, 1)
     }
+    
+    
+`
+export const ContainerLogo = styled.image `
+    img {
+        width:200px ;
+        margin:35px ;
+    }
+        
+`
 
+export const ContainerInput = styled.div `
+    display:flex ;
+    flex-direction:row ;
 `
