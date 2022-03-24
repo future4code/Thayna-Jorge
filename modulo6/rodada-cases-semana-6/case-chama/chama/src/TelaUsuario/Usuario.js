@@ -1,18 +1,25 @@
-import React from "react"
-import { ContainerUserPai, ContainerUserInfo} from "./styledUsuario"
-import foto from "../img/pessoa.jpg"
+import React, { useEffect, useState } from "react"
 
+import { ContainerUserPai, ContainerUserInfo} from "./styledUsuario"
 export const Usuario = (props) => {
-    console.log(props.id);
+    
+    const [user, setUser] = useState()
+   
+    useEffect(() => {
+        setUser(props.usuarios)
+    }, [props.usuarios])
 
     return(
         <ContainerUserPai>
+            {user ? 
             <ContainerUserInfo>
-            <img src={foto}/>
-            <h2>Nome</h2>
-            <h3>{props.bio}</h3>
-            <p>Front-end bla bla bla</p>
+            <img src={user.avatar_url}/>
+            <h1>{user.name}</h1>
+            <h2>Bio:{user.bio}</h2>
+            <p>E-mail:{user.email}</p>
+            <p>{user.blog}</p>
             </ContainerUserInfo>
+            : <p>Usuario não encontrado</p>}
         </ContainerUserPai>
     )
 }

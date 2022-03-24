@@ -1,24 +1,26 @@
 import React, {useState} from "react"
 import { ContainerPai, ContainerBusca, ContainerLogo, ContainerInput } from "./styledBusca"
 import git from "../img/gitcerto.png"
-import axios from "axios"
-import { BASE_URL } from "../Hooks/url"
+// import {BASE_URL} from "../Hooks/url.js"
+// import axios from "axios"
+
 
 export const Busca = (props) => {
 
-    const [busca, setBusca] = useState("")
+    // const [ busca, setBusca] = useState ()
 
-    const buscUsuario = (ev) => {
-        setBusca(ev.target.value)
-    }
+    // const [ usuarios, setUsuarios] = useState ([])
 
-    const getUser = () => {
-        axios.get(`${BASE_URL}/users/${busca}`)
-        .then((res) => {
-            console.log(res);
-        })
-        
-    }
+    // const buscUsuario = (ev) => {
+    //     setBusca(ev.target.value)
+    // }
+      
+    // const getUser = () => {
+    //     axios.get(`${BASE_URL}/users/${busca}`)
+    //     .then((res) => {
+    //       console.log(res.data);
+    //     })
+    // }
     
     return(
         <ContainerPai>
@@ -30,7 +32,7 @@ export const Busca = (props) => {
                 <input 
                     type ="text" 
                     value = {props.busca}
-                    onChange = {buscUsuario}
+                    onChange = {props.buscUsuario}
                     placeholder = "Buscar Usuário"
                 />
                     <ion-icon name="search-outline"
@@ -40,4 +42,5 @@ export const Busca = (props) => {
             </ContainerBusca>
         </ContainerPai>
     )
+    
 }
