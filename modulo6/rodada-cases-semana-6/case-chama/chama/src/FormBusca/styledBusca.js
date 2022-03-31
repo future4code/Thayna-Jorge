@@ -4,7 +4,7 @@ import fundobusca from "../img/degrade.jpg"
 export const ContainerPai = styled.div `
     background-color: #c5daff;
     width:100% ;
-    /* height:100vh; */
+
     border: 1px solid black;
     display:flex ;
     justify-content:center ;
@@ -16,9 +16,8 @@ export const ContainerBusca = styled.div `
     background-image: url(${fundobusca}) ;
     background-repeat: no-repeat;
     background-size: 100%;
-    height:500px ;
+    padding-bottom:15px ;
     width: 100% ;
-    border: 1px solid black;
     display: flex ;
     justify-content:center;
     align-items:center ;
@@ -29,8 +28,8 @@ export const ContainerBusca = styled.div `
     input{
         width:600px ;
         height:80px ;
-        border:1px solid black ;
         border-radius: 100px ;
+        box-shadow:0 0 1em rgba(0 0 0 / 30%) ;
         font-size: 2em ;
         padding-left: 25px ;
     }
