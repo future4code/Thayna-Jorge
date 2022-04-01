@@ -15,14 +15,14 @@ export const ContainerUserInfo= styled.image `
     justify-content: space-evenly;
     flex-direction:column ;
     align-items:center ;
-    width: 300px ;
+    width: 400px ;
     height: 500px;
     margin-top:50px ;
+    margin-bottom:50px ;
     border-radius:10px ;
     box-shadow:0 0 1em rgba(0 0 0 / 30%) ;
-    background-color: #0e0e0e;
-    
     text-align:center ;
+    padding:10px ;
 
     img{
         margin-top: 5px;
@@ -45,6 +45,7 @@ export const ContainerUserInfo= styled.image `
         font-weight: lighter;
         color:#c600e0;
     }
+    
     p{
         font-size:15px ;
         font-family:Arial, Helvetica, sans-serif ;

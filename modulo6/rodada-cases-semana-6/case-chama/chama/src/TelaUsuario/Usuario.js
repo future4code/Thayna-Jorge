@@ -15,9 +15,11 @@ export const Usuario = (props) => {
             <ContainerUserInfo>
             <img src={user.avatar_url}/>
             <h1>{user.name}</h1>
-            <h2>Bio:{user.bio}</h2>
-            <p>E-mail:{user.email}</p>
-            <p>{user.blog}</p>
+            <h2>Bio: {user.bio}</h2>
+            <p>Login: {user.login}</p>
+            <p>Repositórios: {user.public_repos}</p>
+            <p>URL: {user.html_url}</p>
+
             </ContainerUserInfo>
             : <p>Usuario não encontrado</p>}
         </ContainerUserPai>

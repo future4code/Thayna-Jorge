@@ -1,16 +1,18 @@
-import React, {useState} from "react";
+import React, {useContext, useState} from "react";
 import { Busca } from "./FormBusca/Busca";
 import {Usuario} from "./TelaUsuario/Usuario"
 import { BASE_URL } from "./Hooks/url";
 import axios from "axios"
+import GlobalStateContext from "./Global/GlobalStateContext";
+import { GlobalState } from "./Global/GlobalState";
 
 function App () {
+
+  // const {history, setHistory} = useContext(GlobalStateContext)
 
   const [ busca, setBusca] = useState ()
 
     const [usuarios, setUsuarios] = useState ({})
-
-    const [historico, setHistorico] = useState([])
 
     const buscUsuario = (ev) => {
         setBusca(ev.target.value)
@@ -18,24 +20,23 @@ function App () {
       
     const getUser = () => {
         axios.get(`${BASE_URL}/users/${busca}`)
-        .then((res) => {
+        .then((res) => {  
           console.log(res.data)
-          setUsuarios(res.data);
-
+          setUsuarios(res.data)
         })
         .catch((erro) => {
           console.log(erro.response)
         })
-        setHistorico([...historico, busca])
+        // setHistory([...history, busca])
     }
 
-    console.log(historico)
+    // console.log(history)
         
    return (
-    <div>
+    <GlobalState>
        <Busca getUser={getUser} buscUsuario={buscUsuario} busca={busca}/>
        <Usuario usuarios={usuarios}/>
-    </div>
+    </GlobalState>
   )
 }
 

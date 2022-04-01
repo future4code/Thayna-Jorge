@@ -7,21 +7,11 @@ import git from "../img/gitcerto.png"
 
 export const Busca = (props) => {
 
-    // const [ busca, setBusca] = useState ()
+    // const [renderTela setRenderTela] = useState("usuario")
 
-    // const [ usuarios, setUsuarios] = useState ([])
+    // const getHistorico = () => {
 
-    // const buscUsuario = (ev) => {
-    //     setBusca(ev.target.value)
     // }
-      
-    // const getUser = () => {
-    //     axios.get(`${BASE_URL}/users/${busca}`)
-    //     .then((res) => {
-    //       console.log(res.data);
-    //     })
-    // }
-    
     return(
         <ContainerPai>
             <ContainerBusca>
@@ -39,6 +29,7 @@ export const Busca = (props) => {
                         onClick = {props.getUser}
                     ></ion-icon>
                 </ContainerInput>
+                <p>Ver hitórico de Buscas</p>
             </ContainerBusca>
         </ContainerPai>
     )

@@ -26,8 +26,8 @@ export const ContainerBusca = styled.div `
     
     
     input{
-        width:600px ;
-        height:80px ;
+        width:400px ;
+        height:60px ;
         border-radius: 100px ;
         box-shadow:0 0 1em rgba(0 0 0 / 30%) ;
         font-size: 2em ;
@@ -35,9 +35,17 @@ export const ContainerBusca = styled.div `
     }
     
     ion-icon{
-        width:80px ;
-        height:80px ;
-        color: rgba(255, 255, 255, 1)
+        width:60px ;
+        height:60px ;
+        color: rgba(255, 255, 255, 1);
+        cursor:pointer ;
+    }
+
+    p{
+        font-size:20px ;
+        color : #ffff;
+        cursor: pointer;
+        font-family:Arial, Helvetica, sans-serif ;
     }
     
     
