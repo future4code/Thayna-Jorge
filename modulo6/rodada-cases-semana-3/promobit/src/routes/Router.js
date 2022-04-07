@@ -3,6 +3,9 @@ import { DetailsPage } from "../components/DetailsPage/DetailsPage"
 import { HomePage } from "../components/HomePage/HomePage"
 
 export const Router = () => {
+
+    
+
     return(
         <BrowserRouter>
             <Switch>

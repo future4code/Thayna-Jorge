@@ -5,7 +5,6 @@ export const ContainerFilter = styled.div`
     align-items:center ;
     justify-content:center ;
     flex-direction:column ;
-    height:250px ;
     background-color: #270082 ;
 
     p{
