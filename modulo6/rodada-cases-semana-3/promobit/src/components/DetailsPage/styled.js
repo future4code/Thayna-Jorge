@@ -35,13 +35,14 @@ export const CardMovieDetails = styled.img `
 `
 
 export const CardInfo = styled.div `
-    width:50% ;
+    width:40% ;
     display:flex ;
     flex-direction:column ;
     justify-content:center ;
     align-items:flex-start ;
     color: #fff;
     padding: 1rem ;
+    text-align:justify ;
 
     p:nth-child(1){
         font-size: 25px ;
@@ -75,10 +76,65 @@ export const CardInfo = styled.div `
         p:nth-child(1){
             font-size: 16px ;
         }
-
-        
-
     }
 
     
+`
+export const ContainerCast = styled.div `
+    display:flex ;
+    flex-direction:row ;
+    overflow:auto ;
+`
+export const CardCast = styled.div `
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-between;
+    width:200px ;
+    padding: 0.5em;
+    align-items: center;
+    border-radius: 7px;
+    transition: 0.5s;
+    border: 1px solid rgba(195, 195, 195, 0.5);
+    box-shadow: 1px 1px 2px gray;
+    margin: 1rem;
+
+    :hover{
+        transform: translateY(-3px);
+    }
+
+    img{
+        width:120px ;
+        height:170px ;
+        border-radius:3px ;
+    }
+
+    p{
+        margin:0 ;
+    }
+
+    p:nth-child(1){
+        font-weight: bold;
+    }
+
+`
+
+export const CastInfo = styled.div `
+    height: 18%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.50em;
+    
+`
+export const ContainerRecommendation = styled.div`
+    display:flex ;
+    justify-content:space-around ;
+    width:200px;
+    height:250px ;
+`
+
+export const CardRecommendation = styled.div `
+    width:200px;
+    height:250px ;
 `

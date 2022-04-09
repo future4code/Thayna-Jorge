@@ -33,7 +33,7 @@ export const HomePage = () => {
 
     const showCardMovie = showMovies.map((movie) => {
         return(
-             <CardMovie key={movie.id} >
+             <CardMovie key={movie.id}>
                 <img src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} onClick={() => goToMovieDetails(history, movie.id)}/>
                 <p>{movie.title}</p>
                 <p>{movie.release_date}</p>
