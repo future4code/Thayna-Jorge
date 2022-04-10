@@ -50,6 +50,8 @@ export const DetailsPage = () => {
             </CardRecommendation>
         )
     })
+
+    
     return(
         <div>
             <Header/>
@@ -68,9 +70,9 @@ export const DetailsPage = () => {
             <ContainerCast>
                 {cast}
             </ContainerCast>
-            {/* <ContainerRecommendation>
+            <ContainerRecommendation>
                 {recommendations}
-            </ContainerRecommendation> */}
+            </ContainerRecommendation>
 
         </div>
     )
